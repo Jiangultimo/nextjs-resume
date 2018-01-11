@@ -4,7 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "demo": "node app.js"
+    "demo": "node app.js",
+    "dev":"node ./router/index.js",
+    "build":"next build",
+    "start":"next start"
   },
   "dependencies": {
     "express": "^4.16.2",
@@ -12,6 +15,7 @@
     "mongodb": "^3.0.1",
     "next": "^4.2.2",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "shelljs": "^0.7.8"
   }
 }
