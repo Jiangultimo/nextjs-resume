@@ -1,0 +1,6 @@
+deploy:
+  type: git
+  repository: pages
+  username: Neras
+  url: git@github.com:Neras/pages.git
+  commit: commit test
