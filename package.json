@@ -1,0 +1,17 @@
+{
+  "name": "hing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "demo": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "js-yaml": "^3.10.0",
+    "mongodb": "^3.0.1",
+    "next": "^4.2.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
