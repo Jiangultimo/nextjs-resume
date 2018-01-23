@@ -1,23 +1,17 @@
 const express = require('express');
 const app = express();
+const next = require('next');
+
+const dev = process.env.NODE_ENV !== 'production';
+const nextApp = next({ dev });
+const handle = nextApp.getRequestHandler();
+
 const DBOperation = require('./util/util');
 
-app.get('/', (req, res) => {
-    DBOperation.connectDB((client, db) => {
-        DBOperation.insertData(db, {
-            name:'hehe',
-            link:'wu'
-        }, (result) => {
-            console.log(result)
-            if(result.result.ok == 1){
-                res.send('hello mongodb');
-            }
-        })
+nextApp.prepare().then( () => {
+    app.get('*', (req, res) => {
+        handle(req, res);
     })
-})
+}).catch( err => console.error(err) );
 
-app.listen(3000, () => {
-    console.log('server start at port 3000');
-})
-
-
+module.exports = app;

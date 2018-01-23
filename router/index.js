@@ -10,6 +10,10 @@ app.prepare().then( () => {
     server.get('/', (req, res) => {
         res.send('hello nextjs');
     })
+
+    server.get('*', (req, res) => {
+        handle(req, res);
+    })
     server.listen(3000, (err) => {
         if(err) {
             throw err;

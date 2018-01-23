@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "demo": "node app.js",
-    "dev":"node ./router/index.js",
+    "dev":"node ./bin/www",
     "build":"next build",
     "start":"next start"
   },
