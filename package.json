@@ -4,7 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "demo": "node app.js",
     "dev":"node ./bin/www",
     "build":"next build",
     "start":"next start"
