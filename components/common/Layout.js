@@ -6,11 +6,14 @@ class Layout extends React.Component{
     constructor(props){
         super(props);
     }
-
+    componentDidMount(){
+        console.log(this.props);
+    }
     render(){
+        const {intro} = this.props;
         return(
-            <div className="hing-div__wrapper">
-                <Header />
+            <div className="hing-div__wrapper clearfix">
+                <Header intro={intro}/>
                 {this.props.children}
             <style jsx>
             {`
@@ -23,6 +26,13 @@ class Layout extends React.Component{
             {`
                 body{
                     margin: 0;
+                }
+                .clearfix{}
+                .clearfix::after{
+                    clear: both;
+                    content:'';
+                    display: table;
+                    visibility: hidden;
                 }
             `}
             </style>
