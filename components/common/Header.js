@@ -16,9 +16,10 @@ class Header extends React.Component{
     }
     render(){
         const {headerHeight} = this.state;
-        const {intro} = this.props;
+        const {intro, style} = this.props;
+        const { widthUnit } = style;
         return (
-            <header className="hing-header__wrapper" style={{'minHeight': headerHeight}}>
+            <header className="hing-header__wrapper">
                 <img className="hing-img__avatar" src="../static/avatar.jpg" alt="我自己" />
                 <div className="hing-div__intro">
                     <dl className="hing-dl__group">
@@ -46,6 +47,22 @@ class Header extends React.Component{
                 font-size: 14px;
                 color:#FCFAF2;
                 margin:0;
+            }
+            @media (max-width:750px){
+                .hing-header__wrapper{
+                    width: 100%;
+                    height: ${600/widthUnit}vw;
+                }
+                .hing-img__avatar{
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    width: ${400/widthUnit}vw;
+                }
+                .hing-dd__item{
+                    padding: ${20/widthUnit}vw;
+                    font-size: ${28/widthUnit}vw;
+                }
             }
             `}
             </style>

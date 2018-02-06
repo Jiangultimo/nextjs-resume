@@ -10,10 +10,10 @@ class Layout extends React.Component{
         console.log(this.props);
     }
     render(){
-        const {intro} = this.props;
+        const {intro, style} = this.props;
         return(
             <div className="hing-div__wrapper clearfix">
-                <Header intro={intro}/>
+                <Header intro={intro} style={style}/>
                 {this.props.children}
             <style jsx>
             {`
