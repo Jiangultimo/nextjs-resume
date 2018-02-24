@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 
 import Layout from '../components/common/Layout';
+import Header from '../components/common/Header';
 import Content from '../components/index/content';
 
 /**
@@ -9,10 +10,12 @@ import Content from '../components/index/content';
  */
 class Index extends React.Component {
     static async getInitialProps( { query } ){
-        const {intro} = query.resume.resume;
+        console.log(query.info);
+        const {intro, resume} = query.info.data;
         const style = query.style;
         return {
             intro,
+            resume,
             style
         }
     }
@@ -20,13 +23,14 @@ class Index extends React.Component {
         super(props);
     }
     render() {
-        const {intro, style} = this.props;
+        const {intro, style, resume} = this.props;
         return (
-            <Layout intro={intro} style={style}>
+            <Layout>
                 <Head>
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
                 </Head>
-                <Content />
+                <Header intro={intro} style={style} />
+                <Content resume={resume} />
             </Layout>
         )
     }

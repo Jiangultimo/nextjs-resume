@@ -7,13 +7,12 @@ class Layout extends React.Component{
         super(props);
     }
     componentDidMount(){
-        console.log(this.props);
     }
     render(){
+        // <Header intro={intro} style={style}/>
         const {intro, style} = this.props;
         return(
             <div className="hing-div__wrapper clearfix">
-                <Header intro={intro} style={style}/>
                 {this.props.children}
             <style jsx>
             {`
@@ -26,6 +25,10 @@ class Layout extends React.Component{
             {`
                 body{
                     margin: 0;
+                    font-size: 12px;
+                }
+                h4{
+                    font-size: 14px;
                 }
                 .clearfix{}
                 .clearfix::after{
@@ -33,6 +36,9 @@ class Layout extends React.Component{
                     content:'';
                     display: table;
                     visibility: hidden;
+                }
+                a{
+                    color: #A5DEE4;
                 }
             `}
             </style>

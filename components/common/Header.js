@@ -1,22 +1,22 @@
 import React from 'react';
 
-class Header extends React.Component{
-    constructor(props){
+class Header extends React.Component {
+    constructor(props) {
         super(props)
         this.state = {
             headerHeight: 400
         }
     }
-    componentDidMount(){
+    componentDidMount() {
         console.log(window.innerHeight);
         this.setState({
             headerHeight: window.innerHeight
         })
         console.log(this.props);
     }
-    render(){
-        const {headerHeight} = this.state;
-        const {intro, style} = this.props;
+    render() {
+        const { headerHeight } = this.state;
+        const { intro, style } = this.props;
         const { widthUnit } = style;
         return (
             <header className="hing-header__wrapper">
@@ -28,30 +28,51 @@ class Header extends React.Component{
                         ))}
                     </dl>
                 </div>
-            <style jsx>
-            {`
-            .hing-header__wrapper{
-                width: 200px;
-                float: left;
-                background-color: #5DAC81;
-            }
-            .hing-img__avatar{
-                width: 200px;
-            }
-            .hing-dl__group{
-                margin: 0;
-                width: 100%;
-            }
-            .hing-dd__item{
-                padding: 10px;
-                font-size: 14px;
-                color:#FCFAF2;
-                margin:0;
-            }
-            @media (max-width:750px){
+                <style jsx>
+                    {`
+                    .hing-header__wrapper{
+                        width: 100%;
+                        background-color: #5DAC81;
+                        padding: 10px 0;
+                    }
+                    .hing-img__avatar{
+                        width: 180px;
+                        display: block;
+                        padding: 10px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        border-radius: 50%;
+                    }
+                    .hing-div__intro{
+                        width: 400px;
+                        display:block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    .hing-dl__group{
+                        margin: 0;
+                        width: 100%;
+                    }
+                    .hing-dd__item{
+                        text-align: center;
+                        font-size: 14px;
+                        color:#FCFAF2;
+                        margin:0;
+                    }
+                    `}
+                </style>
+            </header>
+        );
+    }
+}
+
+export default Header;
+
+/*
+@media (max-width:750px){
                 .hing-header__wrapper{
                     width: 100%;
-                    height: ${600/widthUnit}vw;
+                    height: ${400/widthUnit}vw;
                 }
                 .hing-img__avatar{
                     margin-left: auto;
@@ -64,11 +85,5 @@ class Header extends React.Component{
                     font-size: ${28/widthUnit}vw;
                 }
             }
-            `}
-            </style>
-            </header>
-        );
-    }
-}
 
-export default Header;
+*/
