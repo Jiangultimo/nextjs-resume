@@ -8,11 +8,9 @@ class Header extends React.Component {
         }
     }
     componentDidMount() {
-        console.log(window.innerHeight);
         this.setState({
             headerHeight: window.innerHeight
         })
-        console.log(this.props);
     }
     render() {
         const { headerHeight } = this.state;
@@ -36,9 +34,9 @@ class Header extends React.Component {
                         padding: 10px 0;
                     }
                     .hing-img__avatar{
-                        width: 180px;
+                        width: 150px;
                         display: block;
-                        padding: 10px;
+                        margin-bottom: 10px;
                         margin-left: auto;
                         margin-right: auto;
                         border-radius: 50%;

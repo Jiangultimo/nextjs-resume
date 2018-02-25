@@ -4,18 +4,19 @@ import Head from 'next/head';
 import Layout from '../components/common/Layout';
 import Header from '../components/common/Header';
 import Content from '../components/index/content';
+import SelfEvaluation from '../components/index/selfEvaluation';
 
 /**
  * getInitialProps can not be used in children components. Only in pages.
  */
 class Index extends React.Component {
     static async getInitialProps( { query } ){
-        console.log(query.info);
-        const {intro, resume} = query.info.data;
+        const {intro, resume, evaluation} = query.info.data;
         const style = query.style;
         return {
             intro,
             resume,
+            evaluation,
             style
         }
     }
@@ -23,7 +24,7 @@ class Index extends React.Component {
         super(props);
     }
     render() {
-        const {intro, style, resume} = this.props;
+        const {intro, style, resume, evaluation} = this.props;
         return (
             <Layout>
                 <Head>
@@ -31,6 +32,7 @@ class Index extends React.Component {
                 </Head>
                 <Header intro={intro} style={style} />
                 <Content resume={resume} />
+                <SelfEvaluation evaluation={evaluation}/>
             </Layout>
         )
     }

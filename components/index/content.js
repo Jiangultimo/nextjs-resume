@@ -6,10 +6,6 @@ class Content extends React.Component{
         super(props);
     }
 
-    componentDidMount(){
-        console.log(this.props.resume);
-    }
-
     render(){
         const {skill, experience} = this.props.resume;
         return (
@@ -30,7 +26,7 @@ class Content extends React.Component{
                                 <div className="hing-div__skills">
                                 {
                                     val.skills.map( (item, index) => {
-                                        return (<span className="hing-span__skill">{item}</span>)
+                                        return (<span className="hing-span__skill" key={index}>{item}</span>)
                                     })
                                 }
                                 </div>
@@ -65,7 +61,8 @@ class Content extends React.Component{
                 }
                 .hing-span__skill{
                     float: left;
-                    border: 1px solid #e3e3e3;
+                    border: 1px solid transparent;
+                    box-shadow: 1px 1px 1px #e3e3e3;
                     border-radius: 4px;
                     margin-right: 10px;
                     padding: 2px 5px;
