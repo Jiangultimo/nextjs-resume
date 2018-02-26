@@ -22,7 +22,7 @@ class Header extends React.Component {
                 <div className="hing-div__intro">
                     <dl className="hing-dl__group">
                         {intro.map((val, index) => (
-                            <dd className="hing-dd__item" key={val.key}>{val.val}</dd>
+                            <dd className="hing-dd__item" key={val.key} dangerouslySetInnerHTML={{__html:val.val}}></dd>
                         ))}
                     </dl>
                 </div>

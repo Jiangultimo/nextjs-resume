@@ -2,53 +2,77 @@ data:
   intro:
     -  val: 蒋正兴
        key: name
-    -  val: 18203096625
+    -  val: '18203096625'
        key: phone
     -  val: medianeras57@gmail.com
        key: email
     -  val: 毕业于重庆邮电大学，软件工程学院
        key: graduate
-    -  val: https://github.com/Neras
+    -  val: <a href="https://github.com/Neras">https://github.com/Neras</a>
        key: github
+    -  val: <a href="https://neras.github.io">https://neras.github.io</a>
+       key: blog
   resume:
       skill:
          title: 掌握技能
          val: 
-          -  熟悉html，css，javascript；
-          -  熟练掌握photoshop切图；熟悉Git常用命令；
+          -  熟悉html，理解Web语义化，理解盒子模型，手写符合W3C标准的css代码
+          -  熟悉JavaScript，掌握ES6/7，并运用到实际项目中
+          -  熟悉Git常用命令；
+          -  熟练使用Photoshop切图应该是基本之一
           -  了解Nodejs，react，vuejs，并都有线上项目；
           -  了解移动端开发，并有线上项目；
           -  了解小程序开发
+          -  有简单的Nginx部署Nodejs项目经验
          key: skill
       experience: 
-       -  company: 重庆猪八戒网络有限公司
-          time: 2015年9月-2016年4月（实习）
-          department: 广告取经团
-          content: 熟悉公司前端技术架构，在带领下维护老页面，期间还参与图片广告系统的开发
-          key: zhubajie00
-          skills: 
-            -  jQuery
-            -  smarty
-       -  company: 重庆猪八戒网络有限公司
-          time: 2016年6月-2017年6月
-          department: 增值广告事业部
-          content: 正式加入重庆猪八戒网络有限公司，期间前端技术架构调整，公司开始使用Nodejs作为中间层，老页面仍然主要使用jQuery，新产品开发使用Nodejs和java对接，同时面向内部的管理系统使用vue进行开发，基于饿了么前端组件搭建。期间主要负责部门面向用户向主站投放图片广告的产品以及面向内部使用的后台管理系统开发，主要产品有<a href="https://xw.zbj.com/">八戒仙位</a>，<a href="http://modimall.zbj.com/">魔笛</a>，<a href="https://ppb.zbj.com">品牌包</a>，关键词投放，以及相应的后台管理系统，同时还与外站汉仪字库合作，内嵌他们的页面进行推广，此外以及其他老页面和少许专题页的维护与开发。
-          key: zhubajie01
-          skills:
-            -  Nodejs
-            -  Vuejs
-            -  nujucks
-            -  lite
-            -  jQuery
-       -  company: 杭州以息互联网科技有限公司
-          time: 2017年6月-至今
-          department: ''
-          content: 目前为止调整了公司前端的技术栈（虽然只有我一个前端）,从以前的jQuery老页面调整到现在接入Nodejs，react，vuejs，在交互和性能进行了改进，期间使用vuejs重构了后台管理系统，使用react+nextjs重构了app内<a href="https://api.c2h4.org/show/article/579">文章页面</a>，使用ssr提高性能，以及使用react和canvas开发<a href="https://fun.c2h4.org/">活动h5页面</a>和老页面维护
-          key: yixi
-          skills:
-            -  Nodejs
-            -  react
-            -  nextjs
-            -  vuejs
-            -  jQuery
-  evaluation: 愿意并且喜欢去认识新的事物，自觉安逸并不是现在应有的状态，不断的尝试才能走得更远。足够的耐心与清晰的思维应该是一个程序员的标配。特立独行或许能让人拥有一个有趣的灵魂，但是遵守规范才能是大家更好的协同工作。清晰的认识到自己现在缺乏什么，该去寻找什么。
+        -  company: 杭州以息互联网科技有限公司
+           time: 2017年6月-至今
+           department: ''
+           projects:
+             -  调整公司技术栈，从之前的只用jQuery，改为现在使用的Nodejs，Reactjs，Vuejs进行架构
+             -  使用Vuejs重构公司后台管理系统，基于饿了么前端组件搭建
+             -  构建小程序内使用的APP主要功能模块，供外部使用
+             -  使用reactjs+nextjs重构APP内的<a href="https://api.c2h4.org/show/article/579">文章页面</a>，添加功能的同时加快页面渲染
+             -  使用react和canvas开发<a href="https://fun.c2h4.org/">活动h5页面</a> 
+             -  老页面的维护
+           key: yixi
+           skills:
+             -  Nodejs
+             -  react
+             -  nextjs
+             -  vuejs
+             -  jQuery
+        -  company: 重庆猪八戒网络有限公司
+           time: 2016年6月-2017年6月
+           department: 增值广告事业部
+           projects:
+             -  主导<a href="https://xw.zbj.com/">八戒仙位</a>，使用fis3构建，主要编写供同事使用的公共组件
+             -  独立完成<a href="http://modimall.zbj.com/">魔笛</a>项目开发，使用Nodejs与使用dubbo协议的java进行对接，最终完成测试以及上线
+             -  带领新同事熟悉开发规范以及共同完成<a href="https://ppb.zbj.com">品牌宝</a>开发，仍以Nodejs作为中间层与java对接
+             -  参与部门后台管理系统开发，公共组件的构建以及维护
+             -  参与与外站汉仪字库合作的开发，内嵌他们页面进行推广以及带领实习生维护老页面
+             -  少许专题页开发以及老页面维护
+           key: zhubajie01
+           skills:
+             -  Nodejs
+             -  Vuejs
+             -  nunjucks
+             -  lite
+             -  jQuery
+        -  company: 重庆猪八戒网络有限公司
+           time: 2015年9月-2016年4月（实习）
+           department: 广告取经团
+           projects:
+              -  熟悉公司前端规范以及技术架构
+              -  参与团队初版产品的开发，现已迭代位八戒仙位
+           key: zhubajie00
+           skills: 
+             -  jQuery
+             -  smarty
+  evaluation: 
+    -  愿意并且喜欢去认识新的事物，在猪八戒时，在大规范的范围下仍然尝试如何使用ES6/7的新特性
+    -  愿意折腾，用自己的vps做一做看一看墙内无法做的事情
+    -  足够的耐心与清晰的思维应该是一个程序员的标配。特立独行或许能让人拥有一个有趣的灵魂，但是遵守规范才能是大家更好的协同工作。
+    -  清晰的认识到自己现在缺乏什么，该去寻找什么。
+    -  简历源代码<a href="https://github.com/Neras/xxhing">https://github.com/Neras/xxhing</a>

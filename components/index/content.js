@@ -10,7 +10,6 @@ class Content extends React.Component{
         const {skill, experience} = this.props.resume;
         return (
             <div className="hing-div__intro__wrapper">
-                <Skill skill={skill} />
                 <div className="hing-div__experience">
                     <h4>工作经历</h4>
                 {
@@ -22,6 +21,12 @@ class Content extends React.Component{
                                 {
                                     !!val.department && <p>{val.department}</p>
                                 }
+                                <ul>
+                                {
+                                    val.projects.map( (project, key) => (
+                                        <li key={`pro${key}`} dangerouslySetInnerHTML={{__html: project}}></li>
+                                    ))
+                                }</ul>
                                 <p dangerouslySetInnerHTML={{__html: val.content}}></p>
                                 <div className="hing-div__skills">
                                 {
@@ -71,6 +76,7 @@ class Content extends React.Component{
                 }
                 `}
                 </style>
+                <Skill skill={skill} />
             </div>
         )
     }

@@ -1,3 +1,0 @@
-db:
-  name: users
-  link: mongodb://localhost:27017

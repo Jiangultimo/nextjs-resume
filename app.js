@@ -7,8 +7,6 @@ const dev = process.env.NODE_ENV !== 'production';
 const nextApp = next({ dev });
 const handle = nextApp.getRequestHandler();
 
-const DBOperation = require('./util/util');
-
 nextApp.prepare().then( () => {
     router.init({
         app: app,
