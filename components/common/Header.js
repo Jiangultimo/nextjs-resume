@@ -14,8 +14,8 @@ class Header extends React.Component {
     }
     render() {
         const { headerHeight } = this.state;
-        const { intro, style } = this.props;
-        const { widthUnit } = style;
+        const { intro } = this.props;
+        // const { widthUnit } = style;
         return (
             <header className="hing-header__wrapper">
                 <img className="hing-img__avatar" src="../static/avatar.jpg" alt="我自己" />
