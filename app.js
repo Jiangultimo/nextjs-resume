@@ -1,6 +1,5 @@
-const express = require('express');
-const app = express();
-const next = require('next');
+const Koa = require('koa');
+const app = new Koa();
 
 const router = require('./lib/createRouter');
 const dev = process.env.NODE_ENV !== 'production';
