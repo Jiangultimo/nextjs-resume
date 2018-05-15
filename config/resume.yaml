@@ -30,7 +30,8 @@ data:
            time: 2017年6月-至今
            department: ''
            projects:
-             -  调整公司技术栈，从之前的只用jQuery，改为现在使用的Nodejs，Reactjs，Vuejs进行架构
+             -  调整公司技术栈，从之前的只用jQuery，改为现在使用的Nodejs，Reactjs，Vuejs进行开发
+             -  与百度合作，将人脸检测功能提取嵌入百度，<a href="https://open.c2h4.org/c2h42baidu/#/">https://open.c2h4.org/c2h42baidu/#/</a>
              -  使用Vuejs重构公司后台管理系统，基于饿了么前端组件搭建
              -  构建小程序内使用的APP主要功能模块，供外部使用
              -  使用reactjs+nextjs重构APP内的<a href="https://api.c2h4.org/show/article/579">文章页面</a>，添加功能的同时加快页面渲染
