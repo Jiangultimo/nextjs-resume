@@ -25,6 +25,7 @@ class Index extends React.Component {
     }
     render() {
         const {intro, style, resume, evaluation} = this.props;
+        console.log(resume)
         return (
             <Layout>
                 <Head>

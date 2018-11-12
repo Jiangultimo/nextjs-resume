@@ -7,7 +7,7 @@ class Content extends React.Component{
     }
 
     render(){
-        const {skill, experience} = this.props.resume;
+        const {skill, experience = []} = this.props.resume;
         return (
             <div className="hing-div__intro__wrapper">
                 <div className="hing-div__experience">
@@ -23,14 +23,14 @@ class Content extends React.Component{
                                 }
                                 <ul>
                                 {
-                                    val.projects.map( (project, key) => (
+                                    (val.projects || []).map( (project, key) => (
                                         <li key={`pro${key}`} dangerouslySetInnerHTML={{__html: project}}></li>
                                     ))
                                 }</ul>
                                 <p dangerouslySetInnerHTML={{__html: val.content}}></p>
                                 <div className="hing-div__skills">
                                 {
-                                    val.skills.map( (item, index) => {
+                                    (val.skills || []).map( (item, index) => {
                                         return (<span className="hing-span__skill" key={index}>{item}</span>)
                                     })
                                 }
