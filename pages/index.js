@@ -8,17 +8,17 @@ class Index extends Component {
     this.state = {
       inputStr: '',
       pageHeight: 0
-    }
+    };
   }
   componentDidMount () {
     this.setState({
       pageHeight: window.innerHeight
-    })
+    });
   }
   handleInput (e) {
     this.setState({
       inputStr: e.target.value
-    })
+    });
   }
   render () {
     return (
@@ -50,10 +50,10 @@ class Index extends Component {
                 box-sizing: border-box;
                 float:right;
               }
-            `}
-          </style>
-        </div>
-      </Layout>
+              `}
+            </style>
+          </div>
+        </Layout>
     );
   }
 }
