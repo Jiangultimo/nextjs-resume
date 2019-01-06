@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "node ./bin/www",
+    "dev": "nodemon node ./bin/www",
     "build": "next build",
     "start": "next start"
   },
@@ -18,5 +18,8 @@
     "react-dom": "^16.2.0",
     "react-markdown": "^3.3.0",
     "shelljs": "^0.7.8"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
   }
 }
