@@ -12,7 +12,7 @@ import SelfEvaluation from '../components/index/selfEvaluation';
  */
 class Index extends React.Component {
     static async getInitialProps() {
-        const { data } = await axios.get('http://127.0.0.1:3000/api/resume')
+        const { data } = await axios.get('http://127.0.0.1:8000/api/resume')
         const { info: { data: { intro, resume, evaluation } }, style } = data;
         return {
             intro,
