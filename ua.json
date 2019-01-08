@@ -1,0 +1,13 @@
+{
+  "apps": [
+    {
+      "name": "resume",
+      "watch": false,
+      "script": "./app.js",
+      "env_production": {
+        "NODE_ENV": "production",
+        "PORT": 3000
+      }
+    }
+  ]
+}

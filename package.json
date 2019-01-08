@@ -4,9 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon node ./bin/www",
-    "build": "next build",
-    "start": "next start"
+    "dev": "node ./bin/www",
+    "build": "next build"
   },
   "dependencies": {
     "axios": "^0.18.0",
