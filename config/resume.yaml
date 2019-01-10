@@ -20,9 +20,10 @@ data:
           -  熟悉JavaScript，掌握ES6/7，并运用到实际项目中
           -  熟悉Git常用命令；
           -  熟练使用Photoshop切图应该是基本之一
-          -  了解Nodejs，React，Vue，并都有线上项目；
+          -  熟悉React
+          -  了解Nodejs，Vue，并都有线上项目；
           -  了解移动端开发，并有线上项目；
-          -  了解小程序开发
+          -  了解Docker
           -  有简单的Nginx部署Nodejs项目经验
          key: skill
       experience: 
@@ -64,10 +65,10 @@ data:
            time: 2016年6月-2017年6月
            department: 增值广告事业部
            projects:
-             -  主导<a href="https://xw.zbj.com/">八戒仙位</a>，使用fis3构建，主要编写供同事使用的公共组件
-             -  带领新同事熟悉开发规范以及共同完成<a href="https://ppb.zbj.com">品牌宝</a>开发，仍以Nodejs作为中间层与java对接
+             -  负责<a href="https://xw.zbj.com/">八戒仙位</a>开发，使用fis3构建，主要编写供同事使用的公共组件
+             -  负责<a href="https://ppb.zbj.com">品牌宝</a>开发，仍以Nodejs作为中间层与java对接
              -  参与部门后台管理系统开发，公共组件的构建以及维护
-             -  参与与外站汉仪字库合作的开发，内嵌他们页面进行推广以及带领实习生维护老页面
+             -  参与与外站汉仪字库合作的开发，内嵌他们页面进行推广
              -  少许专题页开发以及老页面维护
            key: zhubajie01
            skills:
@@ -75,15 +76,6 @@ data:
              -  Vue
              -  nunjucks
              -  lite
-             -  jQuery
-        -  company: 重庆猪八戒网络有限公司
-           time: 2015年9月-2016年4月（实习）
-           department: 广告取经团
-           projects:
-              -  熟悉公司前端规范以及技术架构
-              -  参与团队初版产品的开发，现已迭代为八戒仙位
-           key: zhubajie00
-           skills: 
              -  jQuery
              -  smarty
   evaluation: 

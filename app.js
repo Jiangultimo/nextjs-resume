@@ -4,7 +4,6 @@ const next = require('next');
 
 const router = require('./lib/createRouter');
 const dev = process.env.NODE_ENV !== 'production';
-console.log(process.env.NODE_ENV)
 const nextApp = next({ dev });
 const handle = nextApp.getRequestHandler();
 
