@@ -43,7 +43,7 @@ class Content extends React.Component{
         <style jsx>
           {`
             .hing-div__intro__wrapper{
-              width: 600px;
+              max-width: 600px;
               margin-left: auto;
               margin-right: auto;
             }

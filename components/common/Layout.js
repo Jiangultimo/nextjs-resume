@@ -8,7 +8,7 @@ class Layout extends React.Component{
   }
   render(){
     // <Header intro={intro} style={style}/>
-    const {intro, style} = this.props;
+    // const {intro, style} = this.props;
     return(
       <div className="hing-div__wrapper clearfix">
         {this.props.children}
@@ -23,10 +23,10 @@ class Layout extends React.Component{
             {`
               body{
                 margin: 0;
-                font-size: 12px;
+                font-size: 14px;
               }
               h4{
-                font-size: 14px;
+                font-size: 16px;
               }
               .clearfix{}
               .clearfix::after{
