@@ -2,7 +2,7 @@ data:
   intro:
     -  val: 蒋正兴
        key: name
-    -  val: '18203096625'
+    -  val: '17682340306'
        key: phone
     -  val: medianeras57@gmail.com
        key: email
@@ -18,11 +18,9 @@ data:
          val: 
           -  熟悉html，理解Web语义化，理解盒子模型，手写符合W3C标准的css代码
           -  熟悉JavaScript，掌握ES6/7，并运用到实际项目中
-          -  熟悉Git常用命令；
-          -  熟练使用Photoshop切图应该是基本之一
+          -  熟悉Git常用命令
           -  熟悉React
-          -  了解Nodejs，Vue，并都有线上项目；
-          -  了解移动端开发，并有线上项目；
+          -  了解Nodejs，Vue
           -  了解Docker
           -  有简单的Nginx部署Nodejs项目经验
          key: skill
@@ -79,7 +77,6 @@ data:
              -  jQuery
              -  smarty
   evaluation: 
-    -  深知只有不断学习才能走得更远，初入猪八戒时，曾获得部门年中<b>最佳进步奖</b>
     -  愿意并且喜欢去认识新的事物，在猪八戒时，在大规范的范围下仍然尝试如何使用ES6/7的新特性
     -  愿意折腾，用自己的vps做一做看一看墙内无法做的事情
     -  足够的耐心与清晰的思维应该是一个程序员的标配。特立独行或许能让人拥有一个有趣的灵魂，但是遵守规范才能使大家更好的协同工作。
