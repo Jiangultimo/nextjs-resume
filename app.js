@@ -13,7 +13,7 @@ router.init({
   isNext: false
 })
 nextApp.prepare().then( () => {
-  router.init({ // 方式刷新页面出现404的情况
+  router.init({ // 防止刷新页面出现404的情况
     app: app,
     nextApp: nextApp,
     isNext: true
